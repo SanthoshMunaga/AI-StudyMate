@@ -350,10 +350,8 @@ The user is using this for studying, so keep the questions clear and useful.
 // Start Server
 // ------------------------------------
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
-app.listen(PORT, () => {
-  console.log(
-    `AI StudyMate server running on http://localhost:${PORT}`
-  );
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`AI StudyMate server running on port ${PORT}`);
 });
