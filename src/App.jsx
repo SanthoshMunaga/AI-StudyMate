@@ -35,7 +35,7 @@ function App() {
     setIsRetest(false);
 
     try {
-      const response = await fetch("http://localhost:3001/api/generate", {
+      const response = await fetch("https://ai-studymate-k0cz.onrender.com/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
